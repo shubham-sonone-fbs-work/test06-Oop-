@@ -4,37 +4,28 @@ class VEHICLE:
     def __init__(self,wheel,person):
         self.wheel = wheel 
         self.person = person
-        
     def cal_toll(self):
         print("CALCULATED TOLL: ")
         
 class TWO_WHELLER(VEHICLE):
-    
     def cal_toll(self):
         toll = 20 
-        
         if self.person > 2:
             toll = toll + (self.person - 2) * 10
             
         print("TWO-WHEELER TOLL : ",toll)
         
-        
 class THREE_WHELLER(VEHICLE):
-    
     def cal_toll(self):
         toll = 30 
-        
         if self.person > 3:
             toll = toll + (self.person - 3) * 20
             
         print("THREE-WHEELER TOLL : ",toll)
         
-        
 class FOUR_WHELLER(VEHICLE):
-    
     def cal_toll(self):
         toll = 40
-        
         if self.person > 4 :
             toll = toll + (self.person - 4) * 40
             
@@ -42,10 +33,8 @@ class FOUR_WHELLER(VEHICLE):
     
 
 class HEAVY_VEHICLE(VEHICLE):
-    
     def cal_toll(self):
         toll = 60
-        
         if self.person > 6:
             toll = toll + (self.person - 6) * 100
         
